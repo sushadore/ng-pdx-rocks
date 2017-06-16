@@ -22,7 +22,8 @@ Module not found: Error: Can't resolve 'promise-polyfill' in '/Users/sushadore/D
   * Navigate to `http://localhost:4200/`
 
 ## Stretch Goals
-  * Add other activity categories including: Dancing, Skiing, Motorcycle riding
+  * Add other activity categories including: Dancing, Skiing, Motorcycling
+  * Add external links
 
 ## Author
 Susha Dore
