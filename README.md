@@ -1,34 +1,44 @@
 # PDX Rocks!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+An Epicodus Angular2 Code Review
 
-###Prerequisites
 
-# TODO
-change firebase innstructions to include "true part and all specifics"
-check for polyfill error
-fuss with links
+## KNOWN BUGS
+App does not list member details, update or delete members or filter members.
 
-# Setup
-  * These instructions add firebase to the project and should be followed up to the section headed __Important Note on Hiding Firebase Credentials__ ignoring the __Typescript Configurations__ section.  https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup
-  * Add instructions for seeding database.
-  * In desired folder run `git clone ` ADD URL HERE!!
+### Description
+This app saves and displays members of a local rock climbing community. Member details such as email, phone number, climbing preference and bio are stored in Firebase as new members are added.
+
+### Prerequisites
+Proper installation of:
+  * Git
+  * Node.js
+  * Bower
+  * Angular
+
+### Setup
+  * Follow [these instructions](https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup) ignoring the __Typescript Configurations__ , __Important Note on Hiding Firebase Credentials__, and __Initializing Firebase__  sections to add Firebase to the app.
+
+  * In desired folder run `git clone https://github.com/sushadore/ng-pdx-rocks.git`
   * `cd ng-pdx-rocks`
   * `npm install`
   * `bower init` accept the preset options
   * `bower install bootstrap --save`
+  * Instructions for seeding Firebase
+    * Select recently created project.
+    * Choose _Database_ in the left-hand navigation menu.
+    * Choose the 3 vertical dots on the right hand side of the grey database nav bar.
+    * Choose _Import JSON_ from this menu.
+    * Upload the sample-members.json associated with PDX Rocks project.
   * `ng serve`
-  * If `ERROR in ./~/firebase/app/shared_promise.js
-Module not found: Error: Can't resolve 'promise-polyfill' in '/Users/sushadore/Desktop/ng-online-store/node_modules/firebase/app'` is returned `npm install promise-polyfill`
-  * Control C, `ng serve`
   * Navigate to `http://localhost:4200/`
 
-## Stretch Goals
+### Stretch Goals
+  * Return to landing page after adding a new member
   * Add other activity categories including: Dancing, Skiing, Motorcycling
   * Add external links
-  * Return to landing page after adding a new member
 
-## Author
+### Author
 Susha Dore
-## Legal
+### Legal
 MIT License
