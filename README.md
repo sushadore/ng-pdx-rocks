@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ###Prerequisites
 
 # TODO
+change firebase innstructions to include "true part and all specifics"
 check for polyfill error
 fuss with links
 

@@ -1,2 +1,5 @@
 <h2>Welcom to PDX Rocks</h2>
 <h3>Our climbers:</h3>
+<div *ngFor="let member of members | async" (click)="goToDetailPage(member)">
+  <h4>{{member.first}}</h4>
+</div>

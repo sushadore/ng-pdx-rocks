@@ -1,6 +1,7 @@
 export class Member {
   constructor(
-    public name: string,
+    public first: string,
+    public last: string,
     public email: string,
     public phone: string,
     public preference: string,

@@ -1,0 +1,18 @@
+{ "members": [{
+    "first": "Susha",
+    "last": "Dore",
+    "email": "susha.dore@gmail.com",
+    "phone": "503.555.1212",
+    "preference": "Top Rope",
+    "image": "none",
+    "bio": "I climb rocks!"
+  }, {
+    "first": "John",
+    "last": "Geode",
+    "email": "johng@someemail.com",
+    "phone": "503.555.1213",
+    "preference": "Boulder",
+    "image": "none",
+    "bio": "I boulder rocks!"
+  }]
+}
