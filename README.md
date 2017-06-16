@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # TODO
 check for polyfill error
+fuss with links
 
 # Setup
   * These instructions add firebase to the project and should be followed up to the section headed __Important Note on Hiding Firebase Credentials__ ignoring the __Typescript Configurations__ section.  https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup
@@ -24,6 +25,7 @@ Module not found: Error: Can't resolve 'promise-polyfill' in '/Users/sushadore/D
 ## Stretch Goals
   * Add other activity categories including: Dancing, Skiing, Motorcycling
   * Add external links
+  * Return to landing page after adding a new member
 
 ## Author
 Susha Dore
