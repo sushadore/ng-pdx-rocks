@@ -1,0 +1,9 @@
+<h3>{{(memberToDisplay | async)?.first}} {{(memberToDisplay | async)?.last}}</h3>
+<h4>About me </h4><p>{{(memberToDisplay | async)?.bio}}</p>
+<h4>Climbing Preference</h4>
+<p>{{(memberToDisplay | async)?.preference}}</p>
+<h4>Contact</h4>
+<ul>
+  <li>Email {{(memberToDisplay | async)?.email}}</li>
+  <li>Phone {{(memberToDisplay | async)?.phone}}</li>
+</ul>

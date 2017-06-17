@@ -2,7 +2,6 @@
 
 An Epicodus Angular2 Code Review
 
-
 ## KNOWN BUGS
 App does not list member details, update or delete members or filter members.
 
@@ -34,6 +33,7 @@ Proper installation of:
   * Navigate to `http://localhost:4200/`
 
 ### Stretch Goals
+  * Change member links to add pointer
   * Return to landing page after adding a new member
   * Add other activity categories including: Dancing, Skiing, Motorcycling
   * Add external links
