@@ -14,6 +14,7 @@ export class EditMemberComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   beginUpdatingMember(memberToUpdate){
     this.memberService.updateMember(memberToUpdate);
   }
