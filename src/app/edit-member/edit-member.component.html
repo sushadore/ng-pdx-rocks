@@ -1,0 +1,35 @@
+<h2>Edit Member Info</h2>
+<div class="form-group">
+  <label>First Name</label>
+  <input class="form-control" [(ngModel)]="selectedMember.first">
+</div>
+<div class="form-group">
+  <label>Last Name</label>
+  <input class="form-control" [(ngModel)]="selectedMember.last">
+</div>
+<div class="form-group">
+  <label>Photo</label>
+  <input class="form-control" [(ngModel)]="selectedMember.image">
+</div>
+<div class="form-group">
+  <label>Email Address</label>
+  <input class="form-control" [(ngModel)]="selectedMember.email">
+</div>
+<div class="form-group">
+  <label>Phone Number</label>
+  <input class="form-control" [(ngModel)]="selectedMember.phone">
+</div>
+<div class="form-group">
+  <label>Climbing Preference</label>
+  <select class="form-control" [(ngModel)]="selectedMember.preference">
+    <option value="top-rope">Top Rope</option>
+    <option value="boulder">Boulder</option>
+    <option value="lead">Lead</option>
+    <option value="trad">Trad</option>
+  </select>
+</div>
+<div class="form-group">
+  <label>About Member</label>
+  <textarea class="form-control" row="3" [(ngModel)]="selectedMember.bio"></textarea>
+</div>
+<button class="btn btn-default" (click)="beginUpdatingMember(selectedMember)">Save Changes</button>

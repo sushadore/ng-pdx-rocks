@@ -34,6 +34,7 @@ Proper installation of:
 
 ### Stretch Goals
   * Change member links to add pointer
+  * Hide forms after use
   * Return to landing page after adding a new member
   * Add other activity categories including: Dancing, Skiing, Motorcycling
   * Add external links

@@ -1,5 +1,8 @@
-<h2>Welcom to PDX Rocks</h2>
 <h3>Our climbers:</h3>
-<div *ngFor="let member of members | async" (click)="goToDetailPage(member)">
-  <h4>{{member.first}}</h4>
+<div *ngFor="let member of members | async">
+  <h4 (click)="goToDetailPage(member)">{{member.first}} {{member.last}}</h4>
+  <div *ngIf="currentRoute === '/admin'">
+    <strong>Bio:</strong> {{member.bio}} <strong>Contact:</strong> {{member.email}}, {{member.phone}} <strong>Preference:</strong> {{member.preference}}
+    <app-edit-member [selectedMember]="member"></app-edit-member>
+  </div>
 </div>
