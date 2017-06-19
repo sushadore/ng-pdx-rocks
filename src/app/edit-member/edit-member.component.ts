@@ -20,7 +20,7 @@ export class EditMemberComponent implements OnInit {
   }
 
   beginDeletingMember(memberToDelete){
-    if(confirm("Are you sure you want to delete this memeber?")){
+    if(confirm("Are you sure you want to delete this member from the roster?")){
       this.memberService.deleteMemeber(memberToDelete);
     }
   }

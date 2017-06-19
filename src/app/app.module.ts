@@ -12,7 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
-import { DeleteMemberComponent } from './delete-member/delete-member.component';
+import { PreferencePipe } from './preference.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +29,7 @@ export const firebaseConfig = {
     AdminComponent,
     MemberDetailComponent,
     EditMemberComponent,
-    DeleteMemberComponent
+    PreferencePipe
   ],
   imports: [
     BrowserModule,

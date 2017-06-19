@@ -36,9 +36,11 @@ Proper installation of:
   * Change member links to add pointer
   * Access edit form with button
   * Hide forms after use
-  * Return to landing page after adding a new member
   * Add other activity categories including: Dancing, Skiing, Motorcycling
   * Add external links
+  * User authentication
+  * Don't allow blank form to be submitted
+  * include member name with deletion warning
 
 ### Author
 Susha Dore

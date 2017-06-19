@@ -1,8 +1,17 @@
-<h3>Our climbers:</h3>
-<div *ngFor="let member of members | async">
+<div *ngIf="currentRoute === '/'">
+  <select class="form-control" (change)="onChange($event.target.value)">
+    <option value="allMembers" selected="selected">All Members</option>
+    <option value="topRopeMembers">Top Rope</option>
+    <option value="boulderMembers">Boulder</option>
+    <option value="leadMembers">Lead</option>
+    <option value="tradMembers">Trad</option>
+  </select>
+</div>
+<div *ngFor="let member of members | async | preference:filterByPreference">
   <h4 (click)="goToDetailPage(member)">{{member.first}} {{member.last}}</h4>
   <div *ngIf="currentRoute === '/admin'">
-    <strong>Bio:</strong> {{member.bio}} <strong>Contact:</strong> {{member.email}}, {{member.phone}} <strong>Preference:</strong> {{member.preference}}
+    <strong>Contact:</strong> {{member.email}}, {{member.phone}}<br> <strong>Preference:</strong> {{member.preference}}<br>
+    <strong>Bio:</strong> {{member.bio}} <br>
     <app-edit-member [selectedMember]="member"></app-edit-member>
   </div>
 </div>
