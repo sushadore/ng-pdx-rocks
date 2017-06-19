@@ -32,4 +32,9 @@ export class MemberService {
                                 image: localUpdatedMember.image,
                                 bio: localUpdatedMember.bio});
   }
+
+  deleteMemeber(localMemeberToDelete){
+    var memberFirebaseEntry = this.getMemberById(localMemeberToDelete.$key);
+    memberFirebaseEntry.remove();
+  }
 }
