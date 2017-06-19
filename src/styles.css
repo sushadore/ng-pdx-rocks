@@ -1,4 +1,14 @@
 .jumbotron {
+  background-color: #6DC6A8;
   text-align: center;
   margin-top: 50px;
+}
+
+.name {
+  cursor: pointer;
+  color: #3366BB;
+}
+
+.name:hover {
+  text-decoration: underline;
 }

@@ -33,11 +33,9 @@ Proper installation of:
   * Navigate to `http://localhost:4200/`
 
 ### Stretch Goals
-  * Change member links to add pointer
   * Access edit form with button
   * Hide forms after use
   * Add other activity categories including: Dancing, Skiing, Motorcycling
-  * Add external links
   * User authentication
   * Don't allow blank form to be submitted
   * include member name with deletion warning

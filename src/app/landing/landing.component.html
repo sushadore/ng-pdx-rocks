@@ -8,7 +8,7 @@
   </select>
 </div>
 <div *ngFor="let member of members | async | preference:filterByPreference">
-  <h4 (click)="goToDetailPage(member)">{{member.first}} {{member.last}}</h4>
+  <h4 class="name" (click)="goToDetailPage(member)">{{member.first}} {{member.last}}</h4>
   <div *ngIf="currentRoute === '/admin'">
     <strong>Contact:</strong> {{member.email}}, {{member.phone}}<br> <strong>Preference:</strong> {{member.preference}}<br>
     <strong>Bio:</strong> {{member.bio}} <br>

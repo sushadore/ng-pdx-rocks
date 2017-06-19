@@ -1,28 +1,28 @@
-<h2>Edit Member Info</h2>
+<h4>Edit Info</h4>
 <div class="form-inline">
   <div class="form-group">
     <label>First Name</label>
-    <input class="form-control" [(ngModel)]="selectedMember.first">
+    <input [(ngModel)]="selectedMember.first">
   </div>
   <div class="form-group">
     <label>Last Name</label>
-    <input class="form-control" [(ngModel)]="selectedMember.last">
+    <input [(ngModel)]="selectedMember.last">
   </div>
   <div class="form-group">
     <label>Photo</label>
-    <input class="form-control" [(ngModel)]="selectedMember.image">
+    <input [(ngModel)]="selectedMember.image">
   </div>
   <div class="form-group">
     <label>Email Address</label>
-    <input class="form-control" [(ngModel)]="selectedMember.email">
+    <input [(ngModel)]="selectedMember.email">
   </div>
   <div class="form-group">
     <label>Phone Number</label>
-    <input class="form-control" [(ngModel)]="selectedMember.phone">
+    <input [(ngModel)]="selectedMember.phone">
   </div>
   <div class="form-group">
     <label>Climbing Preference</label>
-    <select class="form-control" [(ngModel)]="selectedMember.preference">
+    <select [(ngModel)]="selectedMember.preference">
       <option value="top-rope">Top Rope</option>
       <option value="boulder">Boulder</option>
       <option value="lead">Lead</option>
@@ -31,8 +31,8 @@
   </div>
   <div class="form-group">
     <label>About Member</label>
-    <textarea class="form-control" row="3" [(ngModel)]="selectedMember.bio"></textarea>
+    <textarea row="3" [(ngModel)]="selectedMember.bio"></textarea>
   </div>
   <button class="btn btn-default" (click)="beginUpdatingMember(selectedMember)">Save Changes</button>
 </div>
-<button class="btn btn-default" (click)=" beginDeletingMember(selectedMember)">Delete</button>
+<button class="btn btn-default" (click)=" beginDeletingMember(selectedMember)">Delete Member</button>
