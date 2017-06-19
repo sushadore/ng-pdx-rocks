@@ -3,7 +3,7 @@
 An Epicodus Angular2 Code Review
 
 ## KNOWN BUGS
-App does not delete members or filter members.
+App does not filter members.
 
 ### Description
 This app saves and displays members of a local rock climbing community. Member details such as email, phone number, climbing preference and bio are stored in Firebase as new members are added.
