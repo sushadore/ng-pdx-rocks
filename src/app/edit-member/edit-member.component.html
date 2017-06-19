@@ -33,6 +33,6 @@
     <label>About Member</label>
     <textarea row="3" [(ngModel)]="selectedMember.bio"></textarea>
   </div>
-  <button class="btn btn-default" (click)="beginUpdatingMember(selectedMember)">Save Changes</button>
+  <button class="btn" (click)="beginUpdatingMember(selectedMember)">Save Changes</button>
 </div>
-<button class="btn btn-default" (click)=" beginDeletingMember(selectedMember)">Delete Member</button>
+<button class="btn" (click)=" beginDeletingMember(selectedMember)">Delete Member</button>

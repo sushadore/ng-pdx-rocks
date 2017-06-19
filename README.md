@@ -2,11 +2,8 @@
 
 An Epicodus Angular2 Code Review
 
-## KNOWN BUGS
-Not portfolio quality
-
 ### Description
-This app saves and displays members of a local rock climbing community. Member details such as email, phone number, climbing preference and bio are stored in Firebase as new members are added.
+This app saves and displays members of a local rock climbing community. Member details such as email, phone number, climbing preference and bio are stored in Firebase as new members are added. All members are listed on the landing page and each member has a detail page displaying all member data. Admin can add, update and delete members.
 
 ### Prerequisites
 Proper installation of:

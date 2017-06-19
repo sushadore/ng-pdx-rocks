@@ -3,40 +3,44 @@
 </div>
 
 <h3>Add New Member</h3>
-<div class="form-group">
-  <label>First Name</label>
-  <input class="form-control" placeholder="First" #newFirst>
-</div>
-<div class="form-group">
-  <label>Last Name</label>
-  <input class="form-control" placeholder="Last" #newLast>
-</div>
-<div class="form-group">
-  <label>Photo</label>
-  <input class="form-control" placeholder="Leave blank or add url" #newImage>
-</div>
-<div class="form-group">
-  <label>Climbing Preference</label>
-  <select class="form-control" #newPreference>
-    <option value="top-rope">Top Rope</option>
-    <option value="boulder">Boulder</option>
-    <option value="lead">Lead</option>
-    <option value="trad">Trad</option>
-  </select>
-</div>
-<div class="form-group">
-  <label>About Member</label>
-  <textarea class="form-control" rows="3" placeholder="Bio" #newBio></textarea>
-</div>
-<div class="form-group">
-  <label>Email Address</label>
-  <input class="form-control" placeholder="Email" #newEmail>
-</div>
-<div class="form-group">
-  <label>Phone Number</label>
-  <input class="form-control" placeholder="Phone" #newPhone>
+<div class="row">
+  <div class="col-xs-4">
+    <div class="form-group">
+      <label>First Name</label>
+      <input class="form-control" placeholder="First" #newFirst>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input class="form-control" placeholder="Last" #newLast>
+    </div>
+    <div class="form-group">
+      <label>Photo</label>
+      <input class="form-control" placeholder="Leave blank or add url" #newImage>
+    </div>
+    <div class="form-group">
+      <label>Climbing Preference</label>
+      <select class="form-control" #newPreference>
+        <option value="top-rope">Top Rope</option>
+        <option value="boulder">Boulder</option>
+        <option value="lead">Lead</option>
+        <option value="trad">Trad</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>About Member</label>
+      <textarea class="form-control" rows="3" placeholder="Bio" #newBio></textarea>
+    </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input class="form-control" placeholder="Email" #newEmail>
+    </div>
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input class="form-control" placeholder="Phone" #newPhone>
+    </div>
+  </div>
 </div>
 <a routerLink="">
-  <button class="btn btn-default"(click)="submitForm(newFirst.value, newLast.value, newImage.value, newPreference.value, newBio.value, newEmail.value, newPhone.value); newFirst.value=''; newLast.value=''; newImage.value=''; newPreference.value=''; newBio.value=''; newEmail.value=''; newPhone.value='';"
+  <button class="btn"(click)="submitForm(newFirst.value, newLast.value, newImage.value, newPreference.value, newBio.value, newEmail.value, newPhone.value); newFirst.value=''; newLast.value=''; newImage.value=''; newPreference.value=''; newBio.value=''; newEmail.value=''; newPhone.value='';"
 >Add Member</button>
 </a>

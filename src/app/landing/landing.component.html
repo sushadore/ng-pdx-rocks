@@ -1,11 +1,15 @@
 <div *ngIf="currentRoute === '/'">
-  <select class="form-control" (change)="onChange($event.target.value)">
-    <option value="allMembers" selected="selected">All Members</option>
-    <option value="topRopeMembers">Top Rope</option>
-    <option value="boulderMembers">Boulder</option>
-    <option value="leadMembers">Lead</option>
-    <option value="tradMembers">Trad</option>
-  </select>
+  <div class="row">
+    <div class="col-xs-3">
+      <h4>List members according to climbing preference</h4><select class="form-control" (change)="onChange($event.target.value)">
+        <option value="allMembers" selected="selected">All Members</option>
+        <option value="topRopeMembers">Top Rope Members</option>
+        <option value="boulderMembers">Boulder Members</option>
+        <option value="leadMembers">Lead Members</option>
+        <option value="tradMembers">Trad Members</option>
+      </select>
+    </div>
+  </div>
 </div>
 <div *ngFor="let member of members | async | preference:filterByPreference">
   <h4 class="name" (click)="goToDetailPage(member)">{{member.first}} {{member.last}}</h4>
