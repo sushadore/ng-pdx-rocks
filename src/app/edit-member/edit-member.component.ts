@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MemberService } from '../member.service';
 
 @Component({
@@ -7,20 +7,17 @@ import { MemberService } from '../member.service';
   styleUrls: ['./edit-member.component.css'],
   providers: [MemberService]
 })
-export class EditMemberComponent implements OnInit {
+export class EditMemberComponent {
   @Input() selectedMember;
 
   constructor(private memberService: MemberService) {}
-// CAN this go away?
-  ngOnInit() {
-  }
 
   beginUpdatingMember(memberToUpdate) {
     this.memberService.updateMember(memberToUpdate);
   }
 
   beginDeletingMember(memberToDelete) {
-    if (confirm('Are you sure you want to delete this member from the roster?')) {
+    if (confirm('Are you sure you want to delete member from the roster?')) {
       this.memberService.deleteMemeber(memberToDelete);
     }
   }
