@@ -3,7 +3,7 @@
 <h4>Preference</h4>
 <p>{{(memberToDisplay | async)?.preference}}</p>
 <h4>Contact</h4>
-<ul>
-  <li>Email {{(memberToDisplay | async)?.email}}</li>
-  <li>Phone {{(memberToDisplay | async)?.phone}}</li>
+<ul class="list-unstyled">
+  <li><strong>Email:</strong> {{(memberToDisplay | async)?.email}}</li>
+  <li><strong>Phone:</strong> {{(memberToDisplay | async)?.phone}}</li>
 </ul>

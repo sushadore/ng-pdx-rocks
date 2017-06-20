@@ -1,7 +1,7 @@
 <div *ngIf="currentRoute === '/'">
   <div class="row">
     <div class="col-xs-3">
-      <h4>List members according to climbing preference</h4><select class="form-control" (change)="onChange($event.target.value)">
+      <h4>Members listed by climbing preference</h4><select class="form-control" (change)="onChange($event.target.value)">
         <option value="allMembers" selected="selected">All Members</option>
         <option value="topRopeMembers">Top Rope Members</option>
         <option value="boulderMembers">Boulder Members</option>

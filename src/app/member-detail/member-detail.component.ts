@@ -19,7 +19,7 @@ export class MemberDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private memberService: MemberService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

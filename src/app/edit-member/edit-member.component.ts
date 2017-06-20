@@ -10,17 +10,17 @@ import { MemberService } from '../member.service';
 export class EditMemberComponent implements OnInit {
   @Input() selectedMember;
 
-  constructor(private memberService: MemberService) { }
-
+  constructor(private memberService: MemberService) {}
+// CAN this go away?
   ngOnInit() {
   }
 
-  beginUpdatingMember(memberToUpdate){
+  beginUpdatingMember(memberToUpdate) {
     this.memberService.updateMember(memberToUpdate);
   }
 
-  beginDeletingMember(memberToDelete){
-    if(confirm("Are you sure you want to delete this member from the roster?")){
+  beginDeletingMember(memberToDelete) {
+    if (confirm('Are you sure you want to delete this member from the roster?')) {
       this.memberService.deleteMemeber(memberToDelete);
     }
   }

@@ -18,12 +18,12 @@ export class MemberService {
     this.members.push(newMember);
   }
 
-  getMemberById(memberId: string){
+  getMemberById(memberId: string) {
     return this.database.object('members/' + memberId);
   }
 
-  updateMember(localUpdatedMember){
-    var memberFirebaseEntry = this.getMemberById(localUpdatedMember.$key);
+  updateMember(localUpdatedMember) {
+    const memberFirebaseEntry = this.getMemberById(localUpdatedMember.$key);
     memberFirebaseEntry.update({first: localUpdatedMember.first,
                                 last: localUpdatedMember.last,
                                 email: localUpdatedMember.email,
@@ -33,8 +33,8 @@ export class MemberService {
                                 bio: localUpdatedMember.bio});
   }
 
-  deleteMemeber(localMemeberToDelete){
-    var memberFirebaseEntry = this.getMemberById(localMemeberToDelete.$key);
+  deleteMemeber(localMemeberToDelete) {
+    const memberFirebaseEntry = this.getMemberById(localMemeberToDelete.$key);
     memberFirebaseEntry.remove();
   }
 }

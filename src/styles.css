@@ -3,7 +3,7 @@ body {
 }
 
 .jumbotron {
-  background-color: #6DC6A8;
+  background-color: #989EA9;
   text-align: center;
   margin-top: 50px;
 }
@@ -18,5 +18,6 @@ body {
 }
 
 button {
+  background-color: #989EA9;
   color: #3366BB;
 }

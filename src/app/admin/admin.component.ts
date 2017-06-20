@@ -9,13 +9,13 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class AdminComponent implements OnInit {
-  constructor(private memberService: MemberService) { }
-
+  constructor(private memberService: MemberService) {}
+// can this go away
   ngOnInit() {
   }
+
   submitForm(first: string, last: string, image: string, email: string, phone: string, preference: string, bio: string) {
-    var newMember: Member = new Member(first, last, image, email, phone, preference, bio);
+    const newMember: Member = new Member(first, last, image, email, phone, preference, bio);
     this.memberService.addMember(newMember);
-    console.log(newMember);
   }
 }
